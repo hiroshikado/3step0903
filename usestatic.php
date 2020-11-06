@@ -22,6 +22,8 @@ require_once ("bill.php");
 		
 		// staticなプロパティやメソッドへのアクセス
 		// ここに追加
+		echo "消費税率   ： " . Bill::$TAX . "%<br>";
+		echo "税込み価格 ： " . Bill::payOff ( $money ) . "円<br>";
 		?>
 	</div>
 </body>
